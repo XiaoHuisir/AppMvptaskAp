@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/timg2"
+
+    android:padding="50dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="zhangsan"
+        android:textColor="#00ff08" />
+
+    <EditText
+
+        android:id="@+id/edupwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="123456"
+        android:textColor="#00ff08"
+        app:layout_constraintTop_toBottomOf="@id/edusername" />
+
+    <Button
+        android:id="@+id/butlogin"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="登录"
+        app:layout_constraintTop_toBottomOf="@id/edupwd" />
+
+</android.support.constraint.ConstraintLayout>
